@@ -61,9 +61,10 @@ if __name__ == "__main__":
 # # 7 Modifica la función que calcula el área del círculo para que reciba el radio como parámetro.
 # import math
 
-# def area_circulo(radio):
-#     area = math.pi * radio ** 2  # Se calcula el área del círculo utilizando la fórmula matemática
-#     # Se devuelve el área calculada
+def area_circulo(radio):
+    area = math.pi * radio ** 2  # Se calcula el área del círculo utilizando la fórmula matemática
+    # Se devuelve el área calculada
+    return area
 
 # if __name__ == "__main__":
 #     radio = float(input("Ingrese el radio del círculo: "))  # Se solicita al usuario que ingrese el radio del círculo
@@ -73,11 +74,13 @@ if __name__ == "__main__":
 # def celsius_a_fahrenheit(celsius):
 #     return (celsius * 9/5) + 32  # Se aplica la fórmula de conversión de Celsius a Fahrenheit
 
-# def fahrenheit_a_celsius(fahrenheit):
-#     # Se aplica la fórmula de conversión de Fahrenheit a Celsius
+def fahrenheit_a_celsius(fahrenheit):
+    # Se aplica la fórmula de conversión de Fahrenheit a Celsius
+    return (fahrenheit - 32) * (5 / 9)
 
-# if __name__ == "__main__":
-#     celsius = float(input("Ingrese la temperatura en grados Celsius: "))  # Se solicita al usuario que ingrese la temperatura en grados Celsius
-#     print("Temperatura en Fahrenheit:", celsius_a_fahrenheit(celsius))  # Se imprime la temperatura convertida a grados Fahrenheit
-#     # Se solicita al usuario que ingrese la temperatura en grados Fahrenheit
-#     print("Temperatura en Celsius:", fahrenheit_a_celsius(fahrenheit))  # Se imprime la temperatura convertida a grados Celsius
+if __name__ == "__main__":
+    celsius = float(input("Ingrese la temperatura en grados Celsius: "))  # Se solicita al usuario que ingrese la temperatura en grados Celsius
+    print("Temperatura en Fahrenheit:", celsius_a_fahrenheit(celsius))  # Se imprime la temperatura convertida a grados Fahrenheit
+    # Se solicita al usuario que ingrese la temperatura en grados Fahrenheit
+    fahrenheit = float(input("Ingrese la temperatura en grados Fahrenehit: "))
+    print("Temperatura en Celsius:", fahrenheit_a_celsius(fahrenheit))  # Se imprime la temperatura convertida a grados Celsius
